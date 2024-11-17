@@ -242,3 +242,40 @@ if (num1 % 10 === num2 % 10) {
   console.log("Not same last digit");
 }
   */
+
+//----------------------String Methods--------------------
+
+/*
+let str = "         Stupidity               ";
+str = str.trim();
+
+let upperStr = str.toUpperCase();
+console.log(upperStr);
+
+let lowerStr = str.toLocaleLowerCase();
+console.log(lowerStr);
+
+let name = "Siddhartha Raghuvanshi";
+console.log(name.indexOf("Raghuvanshi"));
+
+let password = "     newpass    ";
+password = password.toUpperCase().trim(); //Left to right
+console.log(password);
+
+let piece = "Siddhartha";
+
+piece = piece.slice(0, 8);
+piece = piece.slice(-8); //str.length - num(8)
+console.log(piece);
+
+let myName = "I am Siddhartha";
+myName = myName.replace("Siddhartha", "Stupid for you");
+console.log(myName);
+
+myName = myName.replaceAll("o", "x");
+console.log(myName);
+
+let stupid = "I Love You ";
+stupid = stupid.repeat(3);
+console.log(stupid);
+*/
