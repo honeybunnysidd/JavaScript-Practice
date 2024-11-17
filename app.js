@@ -107,6 +107,7 @@ switch (color) {
 
 //---------------Practice Question-----------
 
+/*
 let day = 8;
 
 switch (day) {
@@ -134,5 +135,110 @@ switch (day) {
   default:
     console.log("Please select a number between 1-7");
 }
+    */
 
 //----------------Alert & Prompt-------------
+
+/*
+console.log("Normal");
+console.warn("Warning");
+console.error("Error");
+*/
+
+/*
+let fName = prompt(`Enter your first name:`);
+let lName = prompt(`Enter your last name:`);
+alert(`Welcome ${fName} ${lName}`);
+*/
+
+/*
+alert(`Enter the value of a!`);
+let a = prompt("Enter here:", "18");
+
+a = parseInt(a);
+alert(`You entered a of type ${typeof a}`);
+
+let write = confirm("Do you want to write it to the page");
+if (write) {
+  document.write(a);
+} else {
+  document.write("Please allow me to write");
+}
+*/
+
+//---------------Practice Question-------------
+
+/*
+let num = 5;
+if (num % 10 === 0) {
+  console.log("Good");
+} else {
+  console.log("bad");
+}
+  */
+
+/*
+let name = prompt(`Enter your name`);
+let age = prompt(`Enter your age`);
+alert(`${name} is ${age} years old`);
+*/
+
+/*
+let quarter = 5;
+switch (quarter) {
+  case 1:
+    console.log("January, February, March");
+    break;
+  case 2:
+    console.log("April, May, June");
+    break;
+  case 3:
+    console.log("July, August, September");
+    break;
+  case 4:
+    console.log("October, November, December");
+    break;
+  default:
+    console.log("Kindly select quarter from 1-4");
+}
+    */
+
+/*
+let str = "apples";
+
+if ((str[0] === "a" || str[0] === "A") && str.length > 5) {
+  console.log("Golden String");
+} else {
+  console.log(`Not a Golden String`);
+}
+  */
+
+/*
+let a = 15;
+let b = 21;
+let c = 100;
+
+if (a > b) {
+  if (a > c) {
+    console.log(`${a} is largest`);
+  } else {
+    console.log(`${c} is largest`);
+  }
+} else {
+  if (b > c) {
+    console.log(`${b} is largest`);
+  } else {
+    console.log(`${c} is largest`);
+  }
+}
+*/
+
+/*
+let num1 = 356465;
+let num2 = 478525;
+if (num1 % 10 === num2 % 10) {
+  console.log(`Same last digit ${num1 % 10}`);
+} else {
+  console.log("Not same last digit");
+}
+  */
