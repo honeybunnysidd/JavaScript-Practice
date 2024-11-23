@@ -279,3 +279,11 @@ let stupid = "I Love You ";
 stupid = stupid.repeat(3);
 console.log(stupid);
 */
+
+//----------------------Practice Question--------------------
+
+/*
+let msg = "help!";
+
+console.log(msg.trim().toUpperCase());
+*/
