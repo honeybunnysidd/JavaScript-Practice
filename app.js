@@ -287,3 +287,34 @@ let msg = "help!";
 
 console.log(msg.trim().toUpperCase());
 */
+
+//---------------Array-------------------------------
+
+/*
+let student = ["Siddhartha", "Honey", "Bunny"];
+
+console.log(student[0]);
+
+let marks = [50, 89, 46, 45];
+
+let info = ["Sidd", 23, 58.5];
+console.log(info[0].length);
+
+let emptyArry = [];
+*/
+
+/*------Arrays are Mutable-------*/
+/*
+let fruit = ["Apple", "Orange", "Guvava"];
+fruit[fruit.length - 1] = "Mango";
+fruit[10] = "Litchi";
+*/
+
+/*------Arrays Methods-------*/
+let fruit = ["apple", "mango", "orange"];
+
+fruit.push("banana"); //End
+fruit.pop(); //End
+
+fruit.unshift("Pinapple"); //Start
+fruit.shift(); //Start
