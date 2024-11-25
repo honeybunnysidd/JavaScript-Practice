@@ -310,7 +310,8 @@ fruit[fruit.length - 1] = "Mango";
 fruit[10] = "Litchi";
 */
 
-/*------Arrays Methods-------*/
+/*--------------------------Arrays Methods------------------------*/
+/*
 let fruit = ["apple", "mango", "orange"];
 
 fruit.push("banana"); //End
@@ -318,3 +319,26 @@ fruit.pop(); //End
 
 fruit.unshift("Pinapple"); //Start
 fruit.shift(); //Start
+
+let primary = ["red", "yellow", "blue"];
+let secondary = ["white", "orange", "green"];
+
+console.log(primary.concat(secondary));
+
+console.log(secondary.reverse());
+
+console.log(secondary.slice(1, 2));
+*/
+/*
+let newArray = [1, 2, 3, 4, 5, 6, 7];
+
+newArray.splice(1, 4, 8, 9);
+
+fruit.sort();
+*/
+
+//----------------------Practice Question--------------------
+/*
+let language = ["c", "c++", "javascript", "python", "java", "c#", "sql"];
+console.log(language.reverse().indexOf("javascript"));
+*/
