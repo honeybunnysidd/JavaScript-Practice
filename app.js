@@ -342,3 +342,75 @@ fruit.sort();
 let language = ["c", "c++", "javascript", "python", "java", "c#", "sql"];
 console.log(language.reverse().indexOf("javascript"));
 */
+
+/*--------------------------Arrays References------------------------*/
+
+/*
+let arr1 = [1];
+let arr2 = [1];
+
+console.log(arr1 == arr2); //false
+*/
+
+/*--------------------------Constant Arrays------------------------*/
+/*
+const arr = [1, 2, 3, 4];
+arr.push(5); //Work
+
+arr = [1, 2, 3, 4];
+*/
+
+/*--------------------------Nested Arrays------------------------*/
+/*
+let nestedArray = [
+  [1, 2],
+  [3, 4],
+  [5, 6,7],
+];
+console.log(nestedArray[2][2]);
+*/
+
+/*-------------------------Practice Question------------------------*/
+/*
+let array = [7, 9, 0, -2];
+let n = 3;
+// console.log(array.slice(0, n));
+
+console.log(array.slice(array.length - n));
+*/
+/*
+let str = prompt("Enter any String");
+if (str.length == 0) {
+  console.log(`String is empty`);
+} else {
+  console.log(`string is not empty`);
+}
+  */
+
+/*
+
+let str = "SiddhaRAghafhdsDF";
+let index = 2;
+if (str[index] === str[index].toLocaleLowerCase()) {
+  console.log(`Char ${str[index]} is in lower case`);
+} else {
+  console.log(`Char ${str[index]} is in uppercase`);
+}
+  */
+/*
+let input = prompt("Please enter any string here");
+console.log(input);
+console.log(input.trim());
+*/
+
+/*
+let newArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let num = 0;
+if (newArray.includes(num)) {
+  console.log(`${num} is present in the array`);
+} else {
+  console.log(`${num} is not present is the array`);
+}
+*/
+
+/*--------------------------Loops------------------------*/
