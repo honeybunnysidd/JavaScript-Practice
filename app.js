@@ -414,3 +414,28 @@ if (newArray.includes(num)) {
 */
 
 /*--------------------------Loops------------------------*/
+/*
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
+}
+*/
+/*--------------------------Practice Question-----------------------*/
+/*
+console.log(`Odd Number`);
+
+for (let i = 1; i <= 15; i = i + 2) {
+  console.log(i);
+}
+console.log(`Even Number`);
+for (let i = 2; i <= 20; i = i + 2) {
+  console.log(i);
+}
+  */
+
+/*
+for (let i = 1; i <= 10; i++) {
+  console.log(5 * i);
+}
+  */
+
+ 
