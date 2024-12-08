@@ -413,7 +413,7 @@ if (newArray.includes(num)) {
 }
 */
 
-/*--------------------------Loops------------------------*/
+/*--------------------------For Loops------------------------*/
 /*
 for (let i = 1; i <= 10; i++) {
   console.log(i);
@@ -438,4 +438,81 @@ for (let i = 1; i <= 10; i++) {
 }
   */
 
- 
+/*--------------------------Nested Loops------------------------*/
+
+/*
+for (let i = 1; i <= 3; i++) {
+  for (let j = 1; j <= 3; j++) {
+    console.log(j);
+  }
+}
+*/
+
+/*--------------------------While Loops------------------------*/
+/*
+let num = prompt("Entery a number:");
+let i = 1;
+while (i <= 10) {
+  console.log(num * i);
+  i++;
+}
+  */
+
+/*
+let j = 0;
+while (j <= 20) {
+  console.log(j);
+  j++;
+}
+  */
+
+/*--------------------------Practice Question-----------------------*/
+
+/*
+let favMovie = "avengers";
+
+let guess = prompt("Enter favorite movie name");
+
+while (favMovie != guess) {
+  if(guess=="quit"){
+    console.log("You quit");
+    break;
+  }
+  guess = prompt("Please enter correct movie");
+}
+if (guess == favMovie) {
+  console.log("Congratulations");
+}
+  */
+
+/*--------------------------Loops with Arrays------------------------*/
+/*
+let fruits = ["mango", "apple", "banana", "litchi", "orange"];
+
+for (let i = 0; i < fruits.length; i++) {
+  console.log(i, fruits[i]);
+}
+  */
+
+/*--------------------------For Of Loops------------------------*/
+/*
+let fruit = ["mango", "apple", "banana", "litchi", "orange"];
+
+for (myFruit of fruit) {
+  console.log(myFruit);
+}
+*/
+
+/*--------------------------For Of Loops with Nested Arrays------------------------*/
+/*
+let hero = [
+  ["ironman", "hulk", "spider-man"],
+  ["flash", "wonder-woman"],
+];
+console.log("Heros");
+for (list of hero) {
+  for (individual of list) {
+    console.log(individual);
+  }
+}
+  */
