@@ -516,3 +516,95 @@ for (list of hero) {
   }
 }
   */
+
+/*--------------------------Practice Question-----------------------*/
+//Todo App
+/*
+let todo = [];
+
+let request = prompt("Please Enter your request (add, delete, list, quit)");
+
+while (true) {
+  if (request == "quit") {
+    console.log("You quit");
+    break;
+  } else if (request == "list") {
+    console.log("-------------");
+    for (let i = 0; i < todo.length; i++) {
+      console.log(i, todo[i]);
+    }
+    console.log("-------------");
+  } else if (request == "add") {
+    let newTask = prompt(`Enter your task`);
+    todo.push(newTask);
+    console.log("task added");
+  } else if (request == "delete") {
+    let idx = prompt("which index's task you want to delete");
+    todo.splice(idx, 1);
+    console.log("Successfully deleted");
+  } else {
+    console.log("wrong request");
+  }
+  request = prompt("Please Enter your next request");
+}
+  */
+
+/*--------------------------Practice Question-----------------------*/
+/*
+let arr = [1, 2, 3, 4, 5, 6, 2, 3];
+let num = 2;
+
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] === num) {
+    arr.splice(i, 1);
+  }
+}
+console.log(arr);
+/*
+
+/*--------------------------Practice Question-----------------------*/
+/*
+//count
+
+let number = 1234;
+let copy = number;
+
+let count = 0;
+while (number != 0) {
+  number = parseInt(number / 10);
+  count++;
+}
+console.log(count);
+
+//Sum
+let sum = 0;
+while (copy != 0) {
+  let rem = copy % 10;
+  sum += rem;
+  copy = parseInt((copy /= 10));
+}
+console.log(sum);
+*/
+/*
+let number = prompt("Enter a number");
+number = parseInt(number);
+let result = 1;
+
+for (let i = number; i >= 1; i--) {
+  result *= i;
+
+}
+console.log(result);
+*/
+/*
+
+let arr = [1, 2, 4, 6, 8, 8, 9, 12];
+
+let largest = 0;
+for (let i = 0; i <= arr.length; i++) {
+  if (arr[i] > largest) {
+    largest = arr[i];
+  }
+}
+console.log(largest);
+*/
