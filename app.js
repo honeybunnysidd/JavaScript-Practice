@@ -608,3 +608,33 @@ for (let i = 0; i <= arr.length; i++) {
 }
 console.log(largest);
 */
+
+/*--------------------------Object Literals-----------------------*/
+/*
+let student = {
+  name: "Siddhartha",
+  age: 22,
+  marks: 96,
+  city: "Bangalore",
+  1: "a",
+};
+
+const item = {
+  price: 100.99,
+  discount: 50,
+  color: ["red, blue"],
+};
+*/
+
+/*----------Get values of objects---------------*/
+/*
+console.log(student.name);
+console.log(item["discount"]);
+console.log(student[1]); // 1 behave as a string
+*/
+/*----------Add/Update values of objects---------------*/
+/*
+student.gender = "Male";
+student.city = "Meerut";
+delete student[1];
+*/
