@@ -638,3 +638,41 @@ student.gender = "Male";
 student.city = "Meerut";
 delete student[1];
 */
+
+/*------------------Math Object & its Methods-----------------------*/
+/*
+console.log(Math.abs(-12)); //Always positive
+console.log(Math.pow(2, 3));
+console.log(Math.floor(5.9)); //smallest near integer
+console.log(Math.ceil(5.1)); //largest near integer
+console.log(Math.random());
+console.log(Math.floor(Math.random() * 1000000));
+console.log(Math.PI);
+
+console.log(Math.floor(Math.random() * 10) + 1);
+console.log(Math.floor(Math.random() * 100) + 1);
+console.log(Math.floor(Math.random() * 5) + 1);
+console.log(Math.floor(Math.random() * 5) + 21);
+console.log(Math.floor(Math.random() * 6) + 90);
+
+*/
+
+/*--------------------------Practice Question-----------------------*/
+//Guess Game
+const userNumber = prompt("Please Enter a number");
+const random = Math.floor(Math.random() * userNumber) + 1;
+let guess = prompt(`Guess the number between 1 to ${userNumber}`);
+
+while (true) {
+  if (guess == random) {
+    console.log(`Correct. ${guess}`);
+    break;
+  } else if (guess == "quit") {
+    console.log("user Quit");
+    break;
+  } else if (guess > random) {
+    guess = prompt(`Guess the small number 1 to ${userNumber}`);
+  } else {
+    guess = prompt(`Guess the large number between 1 to ${userNumber}`);
+  }
+}
