@@ -659,6 +659,7 @@ console.log(Math.floor(Math.random() * 6) + 90);
 
 /*--------------------------Practice Question-----------------------*/
 //Guess Game
+/*
 const userNumber = prompt("Please Enter a number");
 const random = Math.floor(Math.random() * userNumber) + 1;
 let guess = prompt(`Guess the number between 1 to ${userNumber}`);
@@ -676,3 +677,30 @@ while (true) {
     guess = prompt(`Guess the large number between 1 to ${userNumber}`);
   }
 }
+  */
+
+/*--------------------------Practice Question-----------------------*/
+/*
+//Q1
+const dice = Math.floor(Math.random() * 6) + 1;
+console.log(dice);
+
+//Q2
+let car = {
+  name: "XUV",
+  model: "Be 9",
+  color: "Black",
+};
+console.log(car.name);
+
+//Q3
+let Person = {
+  name: "Sidd",
+  age: 23,
+  city: "Bangalore",
+};
+
+Person.city = "Meerut";
+Person.country = "India";
+console.log(Person);
+*/
