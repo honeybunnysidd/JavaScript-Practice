@@ -704,3 +704,24 @@ Person.city = "Meerut";
 Person.country = "India";
 console.log(Person);
 */
+
+/*--------------------------Functions-----------------------*/
+/*
+//Declare the function
+function hello() {
+  console.log("Hello Developers");
+}
+// Call the function
+hello();
+*/
+
+/*--------------------------Functions with Arguments-----------------------*/
+/*
+function printTable(num) {
+  for (let i = 1; i <= 10; i++) {
+    console.log(`${num} X ${i} = ${num * i}`);
+  }
+}
+printTable(17);
+
+*/
