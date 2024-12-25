@@ -725,3 +725,46 @@ function printTable(num) {
 printTable(17);
 
 */
+
+/*--------------------------Return Keyword-----------------------*/
+/*
+function printSum(a, b) {
+  return a + b;
+  //No execution of function after return keyword
+  console.log("Dell");
+}
+
+let sum = printSum(6, printSum(5, 7));
+console.log(sum);
+*/
+
+/*--------------------------Practice Question-----------------------*/
+/*
+function sumOfN(number) {
+  let sum = 0;
+  for (let i = 1; i <= number; i++) {
+    sum += i;
+  }
+  return sum;
+}
+//Call the function for result
+
+function stringToArray(str) {
+  let arr = [];
+  for (i = 0; i < str.length; i++) {
+    arr[i] = str[i];
+  }
+  return arr;
+}
+
+//Concatention of array's String
+let arr = ["hii", "hello", "bye", "!"];
+
+function arrayToString(arr) {
+  let str = "";
+  for (let i = 0; i < arr.length; i++) {
+    str += arr[i];
+  }
+  return str;
+}
+  */
