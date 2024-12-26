@@ -746,8 +746,7 @@ function sumOfN(number) {
     sum += i;
   }
   return sum;
-}
-//Call the function for result
+}              //Now Call the function for result
 
 function stringToArray(str) {
   let arr = [];
@@ -758,8 +757,8 @@ function stringToArray(str) {
 }
 
 //Concatention of array's String
-let arr = ["hii", "hello", "bye", "!"];
 
+let arr = ["hii", "hello", "bye", "!"];
 function arrayToString(arr) {
   let str = "";
   for (let i = 0; i < arr.length; i++) {
