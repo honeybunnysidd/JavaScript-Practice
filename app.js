@@ -767,3 +767,214 @@ function arrayToString(arr) {
   return str;
 }
   */
+
+/*--------------------------Scope-----------------------*/
+
+/*-------------Function Scope--------*/
+/*
+function sum(a, b) {
+  let result = a + b;
+  console.log(result);
+}
+console.log(result); //Error (Global)
+/*
+/*-------------Block Scope--------*/
+/*
+{
+  let a = 15;
+  const b = 16;
+  var c = 27;
+}
+console.log(c); // Var is only working
+console.log(a);
+console.log(b);
+/*
+
+/*-------------Lexical Scope--------*/
+/*
+function outerFunction() {
+  let x = 10;
+  console.log(y); //Error
+  function innerFunction() {
+    console.log(x); // Not Error
+    let y = 5;
+  }
+  innerFunction();
+}
+outerFunction();
+*/
+
+/*--------------------------Practice Question-----------------------*/
+/*
+let greet = "hello";
+function changeGreet() {
+  let greet = "namaste";
+  console.log(greet);
+
+  function innerGreet() {
+    console.log(greet);
+  }
+}
+
+console.log(greet);
+changeGreet();
+*/
+
+/*--------------------------Function Expression-----------------------*/
+/*
+const sum = function (a, b) {
+  return a + b;
+};
+
+console.log(sum(2, 8));
+*/
+/*--------------------------High Order Function-----------------------*/
+/*
+function multipleGreet(func, count) {
+  for (let i = 1; i <= count; i++) {
+    func();
+  }
+}
+
+let greet = function () {
+  console.log("hello");
+};
+
+multipleGreet(greet, 8);
+
+//Another example
+
+function testNumber(func) {
+  return func;
+}
+
+let evenOdd = function (n) {
+  if (n % 2 == 0) {
+    console.log("even");
+  } else {
+    console.log("odd");
+  }
+};
+testNumber(evenOdd(27));
+*/
+
+/*--------------------------Methods-----------------------*/
+/*
+const calculator = {
+  add: function (a, b) {
+    return a + b;
+  },
+  sub: function (a, b) {
+    return a - b;
+  },
+  mul: function (a, b) {
+    return a * b;
+  },
+};
+
+console.log(calculator.add(7, 2));
+console.log(calculator.sub(7, 2));
+console.log(calculator.mul(7, 2));
+
+//Shorthand
+const calc = {
+  add(a, b) {
+    return a + b;
+  },
+  sub(a, b) {
+    return a - b;
+  },
+};
+*/
+
+/*--------------------------Practice Question-----------------------*/
+/*
+let num = 7;
+const arr = [1, 3, 5, 7, 9, 11, 13, 15];
+
+function elementOfArray(arr, n) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > n) {
+      console.log(arr[i]);
+    }
+  }
+}
+elementOfArray(arr, num);
+*/
+
+/*--------------------------Practice Question-----------------------*/
+/*
+let str = "abcdabcdefggghacddefggh";
+
+const getUniqueChar = function (str) {
+  let answer = "";
+  for (let i = 0; i < str.length; i++) {
+    let currKey = str[i];
+    if (!answer.includes(currKey)) {
+      answer += currKey;
+    }
+  }
+  return answer;
+};
+console.log(getUniqueChar(str));
+*/
+
+/*--------------------------Practice Question-----------------------*/
+/*
+let country = [];
+let user = prompt("Please Add any Country.  (You can write 'quit', 'no')");
+while (true) {
+  if (user == "no" || user == `quit`) {
+    break;
+  } else {
+    country.push(user);
+    user = prompt("Please Add any Country.  (You can write 'quit', 'no')");
+  }
+}
+
+function getMaxCountry(arr) {
+  let size = 0;
+  let longCountry = "";
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length > size) {
+      size = arr[i].length;
+      longCountry = arr[i];
+    }
+  }
+  return longCountry;
+}
+
+getMaxCountry(country);
+*/
+
+/*--------------------------Practice Question-----------------------*/
+
+/*
+let str = "aassoooppp";
+
+function getVowelsCount(str) {
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (
+      str[i] == "a" ||
+      str[i] == "e" ||
+      str[i] == "i" ||
+      str[i] == "o" ||
+      str[i] == "u"
+    ) {
+      count++;
+    }
+  }
+  return count;
+}
+
+console.log(getVowelsCount(str));
+*/
+
+/*--------------------------Practice Question-----------------------*/
+/*
+function randomRange(start, end) {
+  let result = Math.floor(Math.random() * (end - start) + start);
+  return result;
+}
+  */
