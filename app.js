@@ -978,3 +978,52 @@ function randomRange(start, end) {
   return result;
 }
   */
+
+/*--------------------------This Keyword-----------------------*/
+/*
+const student = {
+  name: "Stupid",
+  age: 21,
+  location: "Meerut",
+  getage() {
+    console.log(this); //Refer an object
+    let newAge = this.age + 6;
+    return newAge;
+  },
+};
+/*
+/*
+console.log(student.getage());
+
+function getage() {
+  return this;
+}
+console.log(getage());
+*/
+
+/*--------------------------Try and Catch-----------------------*/
+/*
+try {
+  console.log(a);
+} catch {
+  console.log("variable a is not define");
+}
+/*
+console.log(`Stupid`);
+console.log(`Stupid`);
+console.log(a);
+console.log(`Stupid1027`); //not execute due to a
+console.log(`Stupid1027`); //not execute due to a
+*/
+//
+/*
+console.log(`Stupid`);
+console.log(`Stupid`);
+try {
+  console.log(a);
+} catch(err) {
+  console.log(err);
+}
+console.log(`Stupid1027`);
+console.log(`Stupid1027`);
+*/
