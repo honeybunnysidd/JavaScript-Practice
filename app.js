@@ -1027,3 +1027,20 @@ try {
 console.log(`Stupid1027`);
 console.log(`Stupid1027`);
 */
+
+/*--------------------------Miscellaneous Topics-----------------------*/
+
+/*--------------------------Arrow Function-----------------------*/
+/*
+const sum = (a, b) => {
+  return a + b;
+};
+const square = (a) => {
+  return a ** 2;
+};
+*/
+/*
+const mul = (a, b) => a * b; //We can skip return keyword because of implicit understanding
+*/
+
+/*--------------------------Set Timeout-----------------------*/
