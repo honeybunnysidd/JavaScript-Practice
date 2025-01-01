@@ -1043,4 +1043,14 @@ const square = (a) => {
 const mul = (a, b) => a * b; //We can skip return keyword because of implicit understanding
 */
 
-/*--------------------------Set Timeout-----------------------*/
+/*--------------------------Set Timeout-----------------------*/ 4;
+/*
+console.log("Hello Developers");
+setTimeout(() => {
+  console.log(`Sb shi h`);
+}, 4000);
+console.log(`Hello Developers`);
+*/
+
+/*--------------------------Set Interval-----------------------*/
+
