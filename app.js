@@ -1053,4 +1053,19 @@ console.log(`Hello Developers`);
 */
 
 /*--------------------------Set Interval-----------------------*/
+/*
+console.log("Punjabi aagye oye!");
+setInterval(() => {
+  console.log(`Sb shi h`);
+}, 2000);
+*/
 
+//How to stop set Interval
+/*
+let id = setInterval(() => {
+  console.log(`Punjabi aagye oye`);
+}, 3000);
+console.log(id);
+
+clearInterval(id);
+*/
