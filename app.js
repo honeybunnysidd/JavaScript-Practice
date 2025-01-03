@@ -1040,7 +1040,7 @@ const square = (a) => {
 };
 */
 /*
-const mul = (a, b) => a * b; //We can skip return keyword because of implicit understanding
+const mul = (a, b) => a * b; //We can skip return keyword because of implicit understanding for single expression
 */
 
 /*--------------------------Set Timeout-----------------------*/ 4;
@@ -1071,6 +1071,7 @@ clearInterval(id);
 */
 
 /*--------------------------This with Arrow Functions-----------------------*/
+/*
 let student = {
   name: "Siddhartha",
   age: 23,
@@ -1087,8 +1088,10 @@ let student = {
 let newFunction = () => {
   console.log(this); //Global(this = Widndow object)
 };
+*/
 
 /*--------------------------Practice Question-----------------------*/
+/*
 const square = (n) => {
   return n * n;
 };
@@ -1096,6 +1099,7 @@ console.log(square(4));
 //More compact
 const square2 = (n) => n * n;
 console.log(square2(9));
+*/
 
 /*--------------------------Practice Question-----------------------*/
 /*
@@ -1109,3 +1113,40 @@ setTimeout(() => {
 */
 
 /*--------------------------Practice Question-----------------------*/
+/*
+let arr = [50, 5, 5];
+
+const arrayAverage = (arr) => {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum / arr.length;
+};
+
+console.log(arrayAverage(arr));
+*/
+
+/*--------------------------Practice Question-----------------------*/
+/*
+let num = 2;
+const isEven = (num) => num % 2 === 0;
+
+console.log(isEven(num));
+*/
+/*
+const obj = {
+  message: "Hello World",
+  logMessage() {
+    console.log(this.message);
+  },
+};
+
+setTimeout(obj.logMessage(), 1000);
+*/
+
+
+/*--------------------------Array Methods-----------------------*/
+
+/*--------------------------forEach-----------------------*/
+
