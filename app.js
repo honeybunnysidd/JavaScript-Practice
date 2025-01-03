@@ -1069,3 +1069,43 @@ console.log(id);
 
 clearInterval(id);
 */
+
+/*--------------------------This with Arrow Functions-----------------------*/
+let student = {
+  name: "Siddhartha",
+  age: 23,
+  prop: this, //Global scope(this = Window object)
+  getName: function () {
+    return this.name; //this = current object
+  },
+  getAge: () => {
+    //Error (this refer parent scope that is window)
+    return this.age;
+  },
+};
+
+let newFunction = () => {
+  console.log(this); //Global(this = Widndow object)
+};
+
+/*--------------------------Practice Question-----------------------*/
+const square = (n) => {
+  return n * n;
+};
+console.log(square(4));
+//More compact
+const square2 = (n) => n * n;
+console.log(square2(9));
+
+/*--------------------------Practice Question-----------------------*/
+/*
+let id = setInterval(() => {
+  console.log(`Hello world`);
+}, 2000);
+
+setTimeout(() => {
+  clearInterval(id);
+}, 10000);
+*/
+
+/*--------------------------Practice Question-----------------------*/
