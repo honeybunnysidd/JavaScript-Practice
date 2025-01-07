@@ -1134,8 +1134,7 @@ const isEven = (num) => num % 2 === 0;
 
 console.log(isEven(num));
 */
-/*
-const obj = {
+/*const obj = {
   message: "Hello World",
   logMessage() {
     console.log(this.message);
@@ -1148,3 +1147,116 @@ setTimeout(obj.logMessage(), 1000);
 /*--------------------------Array Methods-----------------------*/
 
 /*--------------------------forEach-----------------------*/
+/*
+let arr = [1, 2, 3, 4, 5];
+
+arr.forEach((el) => {
+  console.log(el);
+});
+*/
+/*--------------------------Map-----------------------*/
+/*
+let num = [1, 2, 3, 4, 5];
+let double = num.map((el) => {
+  return el * 2;
+});
+console.log(double);
+
+let student = [
+  { name: "Sidd", marks: 97 },
+  { name: "Honey", marks: 92 },
+  { name: "Bunny", marks: 94 },
+];
+
+let gpa = student.map((el) => {
+  return el.marks / 10;
+});
+
+console.log(gpa);
+*/
+/*--------------------------Filter-----------------------*/
+/*
+let arrofNum = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+let evenArray = arrofNum.filter((el) => {
+  return el % 2 == 0;
+});
+console.log(evenArray);
+
+let oddArray = arrofNum.filter((el) => {
+  return el % 2 != 0;
+});
+console.log(oddArray);
+*/
+
+/*--------------------------EVERY-----------------------*/
+/*
+let arr = [2, 4, 6];
+
+arr.every((el) => {
+  return el % 2 == 0;
+});
+console.log(arr);
+*/
+/*
+let evenArray = [2, 4, 6, 8];
+console.log(
+  evenArray.every((el) => {
+    return el % 2 == 0; //every element of array should be true
+  })
+);
+*/
+/*--------------------------Some-----------------------*/
+/*
+let array = [1, 2, 3, 4];
+console.log(
+  array.some((el) => {
+    return el % 2 == 0;  //True (atleast single element exit in array)
+  })
+);
+*/
+
+/*--------------------------Reduce-----------------------*/
+/*
+let arr = [1, 2, 3, 4];
+
+console.log(
+  arr.reduce((result, el) => {
+    return result + el;
+  })
+);
+*/
+/*
+let nums = [2, 3, 4, 5, 3, 4, 7, 8, 1, 5];
+
+let result = nums.reduce((max, el) => {
+  if (max > el) {
+    return max;
+  } else {
+    return el;
+  }
+});
+
+console.log(result);
+*/
+
+/*--------------------------Practice Question-----------------------*/
+/*
+let arr = [10, 20, 30, 40, 50];
+let ans = arr.every((el) => {
+  return el % 10 == 0;
+});
+console.log(ans);
+*/
+/*--------------------------Practice Question-----------------------*/
+/*
+let arr = [10, 2, 30, 60, 50, 5];
+let ans = arr.reduce((acc, el) => {
+  if (acc > el) {
+    return el;
+  } else {
+    return acc;
+  }
+});
+console.log(ans);
+*/
