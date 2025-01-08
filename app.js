@@ -1262,15 +1262,61 @@ console.log(ans);
 */
 
 /*--------------------------Default Parameters-----------------------*/
+/*
 function sum(a, b = 2) {
   return a + b;
 }
 console.log(sum(25));
+*/
 
 /*--------------------------Spread-----------------------*/
+/*
 let arr = [1, 4, 5, 9];
 console.log(...arr);
 console.log(Math.min(...arr)); // (Math.min(1,4,5,9))
+*/
 
 /*--------------------------Spread with Array Literals ------------------------*/
-let newArry = [];
+/*
+let arr = [1, 2, 3, 4];
+let newarr = [...arr, 5];
+console.log(newarr);
+
+let odd = [1, 3, 5, 7, 9];
+let even = [2, 4, 6, 8];
+let combineArray = [...odd, ...even];
+console.log(combineArray.sort());
+*/
+/*--------------------------Spread with Object Literals ------------------------*/
+/*
+let data = {
+  name: "Siddhartha",
+  age: 23,
+};
+
+let dataCopy = {
+  ...data,
+  marks: 96,
+};
+
+console.log(data);
+console.log(dataCopy);
+*/
+/*--------------------------Rest(Opposite of Spread) ------------------------*/
+/*
+function sum(...args) {
+  for (let i = 0; i < args.length; i++) {
+    console.log(`You gave us: ${args[i]}`);
+  }
+}
+  */
+/*
+function mz(a, b, c) {
+  console.log(arguments); //Argument is a "collection" of arguments not array by default
+}
+
+function multiply(...args) {
+  return args.reduce((acc, el) => acc * el); //Rest give an array
+}
+
+*/
