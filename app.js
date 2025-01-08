@@ -1260,3 +1260,17 @@ let ans = arr.reduce((acc, el) => {
 });
 console.log(ans);
 */
+
+/*--------------------------Default Parameters-----------------------*/
+function sum(a, b = 2) {
+  return a + b;
+}
+console.log(sum(25));
+
+/*--------------------------Spread-----------------------*/
+let arr = [1, 4, 5, 9];
+console.log(...arr);
+console.log(Math.min(...arr)); // (Math.min(1,4,5,9))
+
+/*--------------------------Spread with Array Literals ------------------------*/
+let newArry = [];
