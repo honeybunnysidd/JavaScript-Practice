@@ -1320,3 +1320,99 @@ function multiply(...args) {
 }
 
 */
+
+/*-------------------------Destructuring in Array-----------------------*/
+/*
+let arr = ["honey", "bunny", "sidd"];
+let [fname, lname, ...args] = arr;
+console.log(arr);
+console.log(fname);
+console.log(args);
+*/
+
+/*-------------------------Destructuring in Object-----------------------*/
+/*
+let student = {
+  name: "Siddhartha",
+  age: 23,
+  marks: 96,
+};
+
+let { age, ...other } = student; //search key not follow order
+console.log(age);
+console.log(other);
+
+//OR
+
+let { name: identity, age: umar, city="Meerut" } = student;
+console.log(identity);
+console.log(name);
+console.log(umar);
+console.log(city);
+*/
+
+/*--------------------------Practice Question-----------------------*/
+/*
+let arr = [1, 2, 3, 4,5];
+
+const squareAndSum = (arr) => {
+  let squareArr = arr.map((el) => el * el);
+
+  let sum = squareArr.reduce((acc, el) => acc + el);
+  let avg = sum / arr.length;
+
+  return `The sum is ${sum} and Avg is ${avg}`;
+};
+
+console.log(squareAndSum(arr));
+*/
+
+/*--------------------------Practice Question-----------------------*/
+/*
+let arr = [1, 2, 3, 4, 5];
+
+let newArray = arr.map((el) => {
+  return el + 5;
+});
+console.log(newArray);
+*/
+
+/*--------------------------Practice Question-----------------------*/
+
+/*
+let charArray = ["honey", "bunny", "sidd"];
+
+let uparChar = charArray.map((el) => {
+  return el.toUpperCase();
+});
+
+console.log(uparChar);
+*/
+/*--------------------------Practice Question-----------------------*/
+
+/*
+const doubleAndReturnArgs = (arr, ...args) => [
+  ...arr,
+  ...args.map((el) => el * 2),
+];
+
+console.log(doubleAndReturnArgs(arr, 2, 3));
+*/
+
+/*--------------------------Practice Question-----------------------*/
+/*
+
+let obj1 = {
+  name: "Sidd",
+  age: 23,
+  marks: 96,
+};
+let obj2 = {
+  city: "Meerut",
+  class: "MCA",
+};
+
+const mergeObject = (obj1, obj2) => ({ ...obj1, ...obj2 });
+
+console.log(mergeObject(obj1, obj2));
+*/
