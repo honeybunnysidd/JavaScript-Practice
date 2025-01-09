@@ -98,3 +98,22 @@ console.log(image.classList.contains("mainImghai"));
 //Toggle a class(Add if not exist, Remove if exist)
 image.classList.toggle("mainImg");
 console.log(image.classList);
+
+/*--------------------------Navigation of Element---------------------------*/
+
+/*---------------------ParentElement (Single)------------------------*/
+let heading4 = document.querySelector("h4");
+console.log(heading4.parentElement);
+
+/*---------------------chirldren (Single/Multiple)------------------------*/
+let div = document.querySelector(".box");
+console.log(div.children);
+
+/*---------------------sibling (previous/next)------------------------*/
+console.log(heading4.nextElementSibling);
+console.log(div.previousElementSibling);
+//
+let mainImg = document.querySelector("img");
+mainImg.previousElementSibling.style.color = "orange";
+
+/*--------------------------Adding Element---------------------------*/
