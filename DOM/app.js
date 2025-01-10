@@ -176,3 +176,55 @@ div1.style.border = "1px solid black";
 div1.style.backgroundColor = "pink";
 
 /*--------------------------Practice Question---------------------------*/
+//Q1
+let input = document.createElement("input");
+let newbtn = document.createElement("button");
+newbtn.innerText = "Click me";
+
+document.querySelector("body").append(input);
+document.querySelector("body").append(newbtn);
+
+//Q2
+input.setAttribute("placeholder", "username");
+newbtn.setAttribute("id", "btn");
+
+//Q3
+let jsbtn = document.querySelector("#btn");
+jsbtn.style.backgroundColor = "blue";
+jsbtn.style.color = "white";
+
+//Q4
+let h1 = document.createElement("h1");
+h1.innerHTML = "<u>Dom Practice</u>";
+h1.style.color = "purple";
+document.querySelector("body").append(h1);
+
+//Q5
+let p = document.createElement("p");
+p.innerHTML = "My practice Session of <b>DOM</b>";
+document.querySelector("body").append(p);
+
+/*--------------------------DOM Events---------------------------*/
+
+/*-----------------------onclick-------------------------*/
+newbtn.onclick = () => {
+  alert("Form submit successfully!");
+  input.value = "";
+};
+p.onclick = () => {
+  p.style.color = "pink";
+};
+
+/*-----------------------onmouseenter(hover)-------------------------*/
+newbtn.onmouseenter = () => {
+  console.log("hover");
+};
+let title = document.querySelector("title");
+let copyTitle = title.innerText;
+window.onblur = () => {
+  title.innerText = "Come Back";
+};
+
+window.onfocus = () => {
+  title.innerText = copyTitle;
+};
