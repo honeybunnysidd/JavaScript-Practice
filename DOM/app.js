@@ -117,3 +117,62 @@ let mainImg = document.querySelector("img");
 mainImg.previousElementSibling.style.color = "orange";
 
 /*--------------------------Adding Element---------------------------*/
+
+//step 1 - Create an element
+let newpara = document.createElement("p");
+newpara.innerText = "This is new para that is build by javascipt";
+
+//step 2 - Append/Insert the element
+document.querySelector(".box").appendChild(newpara);
+
+//Create a btn with js
+let btn = document.createElement("button");
+btn.innerText = "Click me";
+document.querySelector(".box").appendChild(btn);
+
+//append
+newpara.append(". Append at the last of new para");
+btn.append("!");
+newpara.append(btn);
+
+//prepend
+document.querySelector(".box").prepend(newpara);
+
+//insertAdjacent
+let btn2 = document.createElement("button");
+btn2.innerText = "Submit";
+let box = document.querySelector(".box");
+
+box.insertAdjacentElement("afterend", btn2); //(position, insert element)
+
+/*--------------------------Remove Element---------------------------*/
+btn2.remove();
+newpara.removeChild(btn);
+
+/*--------------------------Practice Question---------------------------*/
+let container = document.querySelector(".container");
+container.style.backgroundColor = "grey";
+
+let paragraph = document.createElement("p");
+paragraph.innerText = `Hey I'm red!`;
+container.append(paragraph);
+
+let heading3 = document.createElement("h3");
+heading3.innerText = `I'm blue h3!`;
+container.append(heading3);
+
+let div1 = document.createElement("div");
+container.append(div1);
+
+let heading1 = document.createElement("h1");
+heading1.innerText = "I'm a div";
+let para1 = document.createElement("p");
+para1.innerText = "Me Too!";
+
+div1.append(heading1);
+div1.append(para1);
+
+div1.style.border = "1px solid black";
+div1.style.backgroundColor = "pink";
+
+/*--------------------------Practice Question---------------------------*/
