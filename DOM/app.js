@@ -207,6 +207,7 @@ document.querySelector("body").append(p);
 /*--------------------------DOM Events---------------------------*/
 
 /*-----------------------onclick-------------------------*/
+/* // Single even on object
 newbtn.onclick = () => {
   alert("Form submit successfully!");
   input.value = "";
@@ -214,11 +215,14 @@ newbtn.onclick = () => {
 p.onclick = () => {
   p.style.color = "pink";
 };
-
+*/
 /*-----------------------onmouseenter(hover)-------------------------*/
+/*
 newbtn.onmouseenter = () => {
   console.log("hover");
 };
+*/
+
 let title = document.querySelector("title");
 let copyTitle = title.innerText;
 window.onblur = () => {
@@ -228,3 +232,36 @@ window.onblur = () => {
 window.onfocus = () => {
   title.innerText = copyTitle;
 };
+
+/*---------------------------addEvenLister----------------------------*/
+
+//For multiple even on same object
+newbtn.addEventListener("click", clicked);
+
+function clicked() {
+  console.log("Button clicked!");
+}
+newbtn.addEventListener("mouseenter", () => {
+  console.log("hover");
+});
+
+/*---------------------------Practice Question----------------------------*/
+//Generate random color
+let btnColor = document.querySelector(".btncolor");
+let headingColor = document.querySelector(".practice h1");
+let colorBox = document.querySelector(".color");
+
+Math.floor(Math.random() * 256);
+btnColor.addEventListener("click", () => {
+  let randomColor = generateColor();
+  headingColor.innerText = randomColor;
+  colorBox.style.backgroundColor = randomColor;
+});
+
+function generateColor() {
+  let red = Math.floor(Math.random() * 256);
+  let green = Math.floor(Math.random() * 256);
+  let blue = Math.floor(Math.random() * 256);
+  let color = `rgb(${red},${green},${blue})`;
+  return color;
+}

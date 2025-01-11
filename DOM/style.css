@@ -1,5 +1,5 @@
 body {
-  font-family: Arial; 
+  font-family: Arial;
 }
 
 #mainImg {
@@ -25,4 +25,16 @@ body {
 
 #description {
   background-color: antiquewhite;
+}
+
+.practice {
+  text-align: center;
+}
+
+.color {
+  margin: 40px auto;
+  text-align: center;
+  border: 1px solid black;
+  width: 303px;
+  height: 203px;
 }
