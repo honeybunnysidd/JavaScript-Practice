@@ -265,3 +265,27 @@ function generateColor() {
   let color = `rgb(${red},${green},${blue})`;
   return color;
 }
+
+/*---------------------------this in Event Listeners----------------------------*/
+let newbtnhai = document.querySelector(".this");
+newbtnhai.addEventListener("click", function () {
+  this.style.color = "green";
+});
+
+/*---------------------------Keyboard EVENTS----------------------------*/
+
+let keyboardEvent = document.querySelector(".keyboardEvent");
+
+keyboardEvent.addEventListener("keyup", function (event) {
+  console.log(event.key); //default arugument and optional as well
+
+  if (event.code == "ArrowUp") {
+    console.log("move forward");
+  } else if (event.code == "ArrowDown") {
+    console.log("move backword");
+  } else if (event.code == "ArrowLeft") {
+    console.log("move left side");
+  } else if (event.code == "ArrowRight") {
+    console.log("move right side");
+  }
+});
