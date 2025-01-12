@@ -6,8 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .bttop{
+        position: fixed;
+        right: 20px;
+        bottom: 40px;
+        border: none;
+        padding: 1rem;
+        border-radius: 20px;
+        background-color: rgb(116, 223, 116);
+        display: none;
+
+      }
+    </style>
   </head>
   <body>
+    <button class="bttop">Back to top</button>
+
     <h1>Spider Man</h1>
     <img src="assets/spiderman_img.png" id="mainImg" />
     <h2>About</h2>
@@ -74,6 +89,11 @@
       <input type="text" class="formEvent" placeholder="username" required />
       <button class="submit">Submit</button>
     </form>
+    <hr />
+    <hr />
+    <h3 class="head3">Practice Question</h3>
+    <input type="text" placeholder="username" class="pinput" />
+    <button class="pbtn">Register</button>
     <hr />
 
     <script src="app.js"></script>

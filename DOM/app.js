@@ -309,4 +309,58 @@ form.addEventListener("submit", function (event) {
 });
 
 /*---------------------------More Events----------------------------*/
+//Track change value from initial to final
+let formEvent = document.querySelector(".formEvent");
+formEvent.addEventListener("change", function () {
+  console.log("Change event");
+  console.log(this.value);
+});
 
+//Track change every value from initial to final
+formEvent.addEventListener("input", function () {
+  console.log("input event");
+  console.log(this.value);
+});
+
+/*---------------------------Practice Question----------------------------*/
+let pinput = document.querySelector(".pinput");
+let pbtn = document.querySelector(".pbtn");
+
+pinput.addEventListener("mouseout", () => {
+  console.log("mouse out");
+});
+
+pinput.addEventListener("keypress", () => {
+  console.log(pinput.value);
+});
+
+let topBtn = document.querySelector(".bttop");
+
+// Listen to scroll events
+document.addEventListener("scroll", () => {
+  // Check if the user is at the end of the page
+  if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+    topBtn.style.display = "block"; // Show the button when at the bottom
+  } else {
+    topBtn.style.display = "none"; // Hide the button when not at the bottom
+  }
+});
+
+// Add a click event listener to scroll to the top
+topBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth", // Smooth scroll to the top
+  });
+});
+
+window.addEventListener("load", (event) => {
+  console.log("page is fully loaded");
+});
+
+//Question
+let head3 = document.querySelector(".head3");
+pinput.addEventListener("input", function (event) {
+  this.value = this.value.replace(/[^a-zA-Z]/, "");
+  head3.innerText = this.value;
+});
