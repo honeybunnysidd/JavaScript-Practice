@@ -289,3 +289,24 @@ keyboardEvent.addEventListener("keyup", function (event) {
     console.log("move right side");
   }
 });
+
+/*---------------------------Form EVENTS----------------------------*/
+let form = document.querySelector("form");
+form.addEventListener("submit", () => {
+  alert("Form Submit Sucessfully");
+});
+//We can stop default work of form
+/*
+form.addEventListener("submit", (event) => {
+  event.preventDefault(); //not going to /action url
+  console.log(document.querySelector(".formEvent").value); //Print input value
+});
+*/
+form.addEventListener("submit", function (event) {
+  event.preventDefault(); //not going to /action url
+  console.dir(form);
+  console.log(this.elements[0].value); //Element is a property of form object
+});
+
+/*---------------------------More Events----------------------------*/
+
