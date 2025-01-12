@@ -363,4 +363,4 @@ let head3 = document.querySelector(".head3");
 pinput.addEventListener("input", function (event) {
   this.value = this.value.replace(/[^a-zA-Z]/, "");
   head3.innerText = this.value;
-});
+}); 
