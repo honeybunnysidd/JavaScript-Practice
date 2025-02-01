@@ -1,8 +1,14 @@
 // JS is single Threaded Language
+/*
+setTimeout(() => {
+  console.log("Siddhartha");
+}, 2000);
+console.log("Hello");
+*/
 // and synchrnous in nature (Execute one by one)
-//So we make js async with help of Callback in SetTimeout
+//So we make js async with the help of Callback in SetTimeout
 
-/*----------------------------CallBack Hell(Nesting of Callback-----------------------------------*/
+/*----------------------------CallBack Hell(Nesting of Callback)-----------------------------------*/
 /*
 let h1 = document.querySelector("h1");
 
