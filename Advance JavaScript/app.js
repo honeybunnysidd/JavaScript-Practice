@@ -118,14 +118,51 @@ changeColor("green", 1000)
 /*----------------------------Async and Await-----------------------------------*/
 /*
 async function greet() {
-  throw "Weak Connection";
+  // throw "Weak Connection";
   return "hello";
 }
 greet()
   .then((result) => {
     console.log("Promise is resolved", result);
   })
-  .catch((e) => {
-    console.log(e);
+  .catch((err) => {
+    console.log(err);
   });
 */
+
+/*
+let demo = async () => {
+  // throw "Weak Connection";
+  return 5;
+};
+demo()
+  .then((result) => {
+    console.log(`Promise resolved: ${result}`);
+  })
+  .catch((err) => {
+    console.log("Promise rejected", err);
+  });
+*/
+
+//--------------Await Keyword--------------
+/*
+let h1 = document.querySelector("h1");
+function colorChange(color, delay) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      h1.style.color = color;
+      resolve("color changed");
+    }, delay);
+  });
+}
+
+async function show() {
+  await colorChange("red", 1000);
+  await colorChange("yellow", 1000);
+  await colorChange("green", 1000);
+  await colorChange("orange", 1000);
+  await colorChange("pink", 1000);
+  await colorChange("skyblue", 1000);
+  return "done";
+}
+  */
