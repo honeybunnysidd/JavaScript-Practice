@@ -80,3 +80,35 @@ async function getDogImage() {
     console.log("error", err);
   }
 }
+
+//-----------------------Practice Question 2 (axios)-----------------
+let url3 = "http://universities.hipolabs.com/search?name=";
+
+let btn3 = document.querySelector("#btn3");
+result = document.querySelector("#result");
+
+btn3.addEventListener("click", async () => {
+  let country = document.querySelector("input").value;
+  let college = await getCollege(country);
+
+  show(college);
+});
+
+async function getCollege(country) {
+  try {
+    let res = await axios.get(url3 + country);
+    return res.data;
+  } catch (err) {
+    return [];
+  }
+}
+
+function show(colleges) {
+  let list = document.querySelector("#list");
+  list.innerText = "";
+  for (coll of colleges) {
+    let li = document.createElement("li");
+    li.innerText = coll.name;
+    list.appendChild(li);
+  }
+}
